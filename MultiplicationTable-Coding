@@ -1,0 +1,23 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class MultiplicationTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		
+		System.out.println("Enter a positive integer: ");
+		int i= scan.nextInt();
+		
+		System.out.println("Multiplication of "+i);
+		
+		for(int n=0; n<=12; n++) {
+			System.out.println(i + " x " + n + " = " + i*n);
+		}
+		scan.close();
+		
+	}
+
+}
