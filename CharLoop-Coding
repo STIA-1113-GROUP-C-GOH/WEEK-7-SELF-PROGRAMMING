@@ -1,0 +1,26 @@
+package repititionAndSelection;
+
+import java.util.Scanner;
+
+public class CharLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char choice;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter yes or no: ");
+		choice = scan.next().charAt(0);
+		
+		while (choice != 'N') {
+			
+			System.out.println("INSIDE LOOPING");
+			System.out.print("Enter yes or no: ");
+			choice = scan.next().charAt(0);
+		}
+		System.out.println("Sentinel value detected. Good Bye. ");
+		
+		scan.close();
+	}
+
+}
