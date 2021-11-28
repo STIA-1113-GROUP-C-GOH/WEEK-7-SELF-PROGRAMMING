@@ -1,6 +1,12 @@
-Enter your account password: 209801
-Your password is wrong! You have 2 chance. Please enter again: 
-Enter your account password: 098212
-Your password is wrong! You have 1 chance. Please enter again: 
-Enter your account password: 102938
-Your password is correct.
+ENTER YOUR PIN: 
+3098
+
+INCORRECT PIN. TRY AGAIN.
+ENTER YOUR PIN: 
+2054
+
+INCORRECT PIN. TRY AGAIN.
+ENTER YOUR PIN: 
+1234
+
+PIN ACCEPTED. ACCESS GRANTED.
