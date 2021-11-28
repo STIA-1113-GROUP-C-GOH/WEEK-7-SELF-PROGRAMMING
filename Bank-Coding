@@ -9,12 +9,12 @@ public class Bank {
 		 Scanner scan = new Scanner(System.in);
          int password = 123456;
          int tries = 0;
-         System.out.println("ENTER YOUR PIN: ");
+         System.out.println("ENTER YOUR PASSWORD: ");
          int entry = scan.nextInt();
          tries++;
          while (entry != password && tries < 3) {
-             System.out.println("\nINCORRECT PIN. TRY AGAIN.");
-             System.out.println("ENTER YOUR PIN: ");
+             System.out.println("\nINCORRECT PASSWORD. TRY AGAIN.");
+             System.out.println("ENTER YOUR PASSWORD: ");
              entry = scan.nextInt();
              tries++;
          }
