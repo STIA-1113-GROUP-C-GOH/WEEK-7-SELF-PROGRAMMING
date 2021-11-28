@@ -7,19 +7,19 @@ public class Bank {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 Scanner scan = new Scanner(System.in);
-         int pin = 1234;
+         int password = 123456;
          int tries = 0;
          System.out.println("ENTER YOUR PIN: ");
          int entry = scan.nextInt();
          tries++;
-         while (entry != pin && tries < 3) {
+         while (entry != password && tries < 3) {
              System.out.println("\nINCORRECT PIN. TRY AGAIN.");
              System.out.println("ENTER YOUR PIN: ");
              entry = scan.nextInt();
              tries++;
          }
-         if (entry == pin)
-             System.out.println("\nPIN ACCEPTED. ACCESS GRANTED.");
+         if (entry == password)
+             System.out.println("\nPASSWORD ACCEPTED. ACCESS GRANTED.");
          else if (tries >= 3)
              System.out.println("\nYOU HAVE RUN OUT OF TRIES. ACCOUNT LOCKED.");
          
