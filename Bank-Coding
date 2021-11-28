@@ -1,0 +1,31 @@
+package repititionAndSelection;
+
+import java.util.Scanner;
+
+public class Bank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+	
+		
+		for(int i=2;i>=0;i--) {
+			System.out.print("Enter your account password: ");
+			int a=scan.nextInt();
+			int password=102938;
+			
+			if(a == password) {
+			System.out.println("Your password is correct.");
+			break;
+			
+			}else
+			System.out.print("Your password is wrong! You have "+i+" chance. Please enter again: ");
+			System.out.println();
+			
+			if(i==0) {
+			System.out.print("Sorry, you need to wait 5 minutes to key in your passwork again!");
+			}
+		}
+		scan.close();
+	}
+}
