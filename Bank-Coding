@@ -6,26 +6,23 @@ public class Bank {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scan=new Scanner(System.in);
-	
-		
-		for(int i=2;i>=0;i--) {
-			System.out.print("Enter your account password: ");
-			int a=scan.nextInt();
-			int password=102938;
-			
-			if(a == password) {
-			System.out.println("Your password is correct.");
-			break;
-			
-			}else
-			System.out.print("Your password is wrong! You have "+i+" chance. Please enter again: ");
-			System.out.println();
-			
-			if(i==0) {
-			System.out.print("Sorry, you need to wait 5 minutes to key in your passwork again!");
-			}
-		}
-		scan.close();
-	}
-}
+		 Scanner scan = new Scanner(System.in);
+         int pin = 1234;
+         int tries = 0;
+         System.out.println("ENTER YOUR PIN: ");
+         int entry = scan.nextInt();
+         tries++;
+         while (entry != pin && tries < 3) {
+             System.out.println("\nINCORRECT PIN. TRY AGAIN.");
+             System.out.println("ENTER YOUR PIN: ");
+             entry = scan.nextInt();
+             tries++;
+         }
+         if (entry == pin)
+             System.out.println("\nPIN ACCEPTED. ACCESS GRANTED.");
+         else if (tries >= 3)
+             System.out.println("\nYOU HAVE RUN OUT OF TRIES. ACCOUNT LOCKED.");
+         
+         scan.close();
+     }
+ }
